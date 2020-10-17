@@ -10,9 +10,13 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^23.0.0",
     "@ckeditor/ckeditor5-vue": "^1.0.3",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0",
     "firebase": "^7.23.0",
     "moment": "^2.29.1",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",
