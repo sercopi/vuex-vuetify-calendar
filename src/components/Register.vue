@@ -17,7 +17,7 @@
     </v-row>
     <v-row>
         <v-col>
-            <v-btn @click="signIn" color="primary">register</v-btn>
+            <v-btn @click="register" color="primary">register</v-btn>
         </v-col>
     </v-row>
 </v-container>
