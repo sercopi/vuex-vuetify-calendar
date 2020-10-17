@@ -34,19 +34,16 @@ export default {
     },
 
     methods: {
-        signIn: function (event) {
+        register: function (event) {
             const router = this.$router;
-            console.log(this.email);
             firebase
                 .auth()
-                .signInWithEmailAndPassword(this.email, this.password)
+                .createUserWithEmailAndPassword(this.email, this.password)
                 .then(
                     user => {
-                        console.log("you are logged in as: " + user.user.email);
-                        console.log(user.user.uid);
-                        console.log("redirecting to lists");
-                        router.push({
-                            name: "viewlists"
+                        alert(`acc created for ${user.user.email}`);
+                        router.go({
+                            path: router.path
                         });
                     },
                     error => alert(error.message)
